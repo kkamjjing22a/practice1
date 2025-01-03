@@ -1,28 +1,36 @@
 <!-- git push https://<your-token>@github.com/kkamjjing22a/practice1.git -->
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>신입 퍼블리셔 리딩 1일차 과제</title>
+<!DOCTYPE html>    <!--  HTML5  로 작성되어 있다고 알려주기 -->
+<html lang="en">     <!-- 웹 페이지 전체를 감싸는 태그. 웹 페이지 기본 언어를 영어로 설정 -->
+    <head> <!-- 보이지 않는 정보가 있는 곳-->
+        <meta charset="UTF-8"> <!-- 이 문서에서 UTF-8 인코딩을 사용할 것이라고 알리기-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--보이는 영역을 기기 화면 너비에 맞추겠다는 뜻 == 반응형??-->
+        <title>신입 퍼블리셔 리딩</title>
     </head>
-    <body>
-        <header>
+    <body> <!-- 페이지 본문-->
+        <header> <!--탭에 뜨는 텍스트--> 
             <h1>퍼블리싱 코칭 1일차</h1>
+            <nav><!--내비게이션 메뉴나 링크 감쌀 때 사용한다.-->
+                <ul> <!-- unordered list. 순서 없는 목록, ol 은 순서가 있는 목록이다. -->
+                    <li><a href="/">홈</a></li> <!--li 는 리스트 아이템 태그. 반드시 ul, ol 태그 내에서 사용되어야 함-->
+                    <li><a href="/intro">소개</a></li> <!--a 태그는 앵커 태그라고 하며 링크를 만들 때 사용한다. href 속성으로 url 을 지정한다.-->
+                    <li><a href="/qna">문의하기</a></li>
+                    <li><a href="https://github.com/kkamjjing22a">GITHUB</a></li>
+                </ul>
+            </nav>
         </header>
-        <nav>
-            <li>홈</li>
-            <li>소개</li>
-            <li>문의하기</li>
-        </nav>
+
+        <main> <!--페이지 중심이 되는 콘텐츠 감싸기. 특히 중요한 내용을-->
+        <section> <!--주로 하나의 관련된 주제 같은 구역을 나눈 데에 사용-->
+                <h1>안녕하세요 정유진이라고 합니다.</h1><!--헤딩 정의하는 태그. 주요 제목 표시-->
+                <h2>퍼블리싱을 처음 시작하게 되었습니다.</h2><!--헤딩 정의하는 태그. 주요 제목보다 낮은 순위 제목 표시-->
+                <h3>잘 부탁드립니다.</h3><!--헤딩 정의하는 태그. h2보다 낮은 단계계 제목 표시-->
+        </section> 
         <section>
-            <oi>
-                <li>안녕하세요 정유진이라고 합니다.</oi>
-                <li>기초 HTML 구조와 시맨틱 태그를 학습했습니다.</oi>
-            </oi>
-    
+                <h1>기초 HTML 구조와</h1>
+                <h2>시맨틱 태그를</h2>
+                <h3>학습했습니다.</h3>
         </section>
-        <footer>© 2025 퍼블리싱 코칭</footer>
-    
+    </main>
+        <footer>© 2025 퍼블리싱 코칭</footer> <!--바닥글. 페이지의 부가 정보 정의의-->
     </body>
     </html>    
