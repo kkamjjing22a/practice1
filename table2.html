@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>혼자 다시 만들어보기</title>
+</head>
+
+<style>
+    table {
+        border: 1px solid #222;
+        border-collapse: collapse;
+        max-width: 1000px;
+        width: 100%;
+        table-layout: fixed;
+    }
+    th {
+        border: 1px solid #222;
+        background-color: #efefef;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    td {
+        border: 1px solid #222;
+        padding: 8px;
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    td[rowspan],
+    td[colspan],
+    .center {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <table>
+        <caption>시간표</caption>
+        <thead>
+            <tr>
+                <th>시간</th>
+                <th>월요일</th>
+                <th>화요일</th>
+                <th>수요일</th>
+                <th>목요일</th>
+                <th>금요일</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">9:00 ~ 12:00</td>
+                <td>HTML 학습</td>
+                <td>CSS 학습</td>
+                <td>SCSS 학습</td>
+                <td>JavaScript 학습</td>
+                <td>React 학습</td>
+            </tr>
+            <tr>
+                <td class="center">공통 회의<br/>(5일 공통)</td>
+                <td colspan="4">공통 회의</td>
+            </tr>
+            <tr>
+                <td>코딩 실습</td>
+                <td>코딩 실습</td>
+                <td>코딩 실습</td>
+                <td>코딩 실습</td>
+                <td>코딩 실습</td>
+            </tr>
+        </tbody>
+    </table>    
+</body>
+</html>
