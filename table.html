@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주말 과제 피드백 클론 코딩</title>
+</head>
+
+<style>
+    table {
+        max-width: 1000px;
+        width: 100%;
+        border-collapse: collapse; /* 테이블 라인 중복 제거 */
+        text-align: center; /* 텍스트 위치 중간 */
+        table-layout: fixed; /* 테이블 행 간격 같도록*/
+    }
+    th {
+        border: 1px solid #222;
+        font-size: 15px;
+        font-weight: 600;
+        background-color: #efefef;
+        padding: 8px;
+    }
+    td {
+        border: 1px solid #222;
+        font-weight: 300;
+        vertical-align: middle;
+        text-align: left;
+        padding: 8px;   
+    }
+        td[rowspan], /* td 태그 중에서 rowspan 속성을 가진 요소를 선택한다. */
+        td[colspan], /* td 태그 중에서 colspan 속성을 가진 요소를 선택한다. */
+        td.center { /* class 이름이 center 인 td 태그를 선택한다. */
+            text-align: center; /* 위에서 선택된 모든 요소에 텍스트를 가로 중앙 정렬하는 스타일을 적용한다.*/
+        }
+</style>
+
+<body>
+    <table>
+        <caption>
+            1주 차 학습 시간표
+        </caption>
+        <thead>
+            <tr>
+                <th>시간</th>
+                <th>월요일</th>
+                <th>화요일</th>
+                <th>수요일</th>
+                <th>목요일</th>
+                <th>금요일</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">9:00~12:00</td> <!-- 3행 병합  -->
+                <td>HTML 학습</td>
+                <td>CSS 학습</td>
+                <td>SCSS 학습</td>
+                <td>JavaScript 학습</td>
+                <td>React 학습</td>
+            </tr>
+            <tr>
+            <td class="center">
+                공통 회의 <br/>(5일 공통)
+            </td>
+            <td colspan="4">공통 회의</td> <!-- 4열 병합 -->
+        </tr>
+        <tr>
+            <td>코딩 실습</td>
+            <td>코딩 실습</td>
+            <td>코딩 실습</td>
+            <td>코딩 실습</td>
+            <td>코딩 실습</td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>
