@@ -1,0 +1,25 @@
+table {
+    border: 1px solid #222;
+    border-collapse: collapse;
+    max-width: 1000px;
+    width: 100%;
+    table-layout: fixed;
+}
+th {
+    border: 1px solid #222;
+    background-color: #efefef;
+    font-size: 15px;
+    font-weight: 600;
+}
+td {
+    border: 1px solid #222;
+    padding: 8px;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+td[rowspan],
+td[colspan],
+.center {
+    text-align: center;
+}
